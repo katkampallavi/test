@@ -1,0 +1,4 @@
+[build]
+  base = "PCOSense-AI/frontend"
+  command = "npm run build"
+  publish = "build"
