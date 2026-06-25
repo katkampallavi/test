@@ -20,6 +20,9 @@ from models import db
 
 def create_app():
     app = Flask(__name__)
+    @app.route("/")
+    def home():
+     return "PCOSense AI Backend is Running Successfully!"
     app.config.from_object(Config)
 
     # Extensions
