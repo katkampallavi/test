@@ -53,7 +53,9 @@ def create_app():
         pass  # db file created in backend folder
         db.create_all()
         print("✅ Database tables created")
-
+    print("\nRegistered Routes:")
+    for rule in app.url_map.iter_rules():
+        print(rule)
     return app
 
 app = create_app()
